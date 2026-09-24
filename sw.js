@@ -1,4 +1,4 @@
-const CACHE='meeting-pocket-v3';
+const CACHE='meeting-pocket-v4';
 const FILES=['./','./index.html','./styles.css?v=3','./content.js','./app.js?v=3','./manifest.webmanifest'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('meeting-pocket-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
