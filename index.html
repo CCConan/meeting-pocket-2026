@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#E9EAE7">
+  <title>會議提示 · Meeting notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到內容</a>
+  <header id="top">
+    <div class="heading"><h1>會議提示</h1><span class="date">25 SEP · 13:00</span></div>
+    <p class="purpose">目標：Final Written Warning → Written Warning</p>
+    <div class="settings" aria-label="閱讀設定">
+      <div class="languages" role="group" aria-label="內容語言"><button data-language="both" aria-pressed="true">中英</button><button data-language="en" aria-pressed="false">English</button><button data-language="zh" aria-pressed="false">中文</button></div>
+      <button id="font-size" aria-label="放大文字" aria-pressed="false">A<span class="bigger">A</span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="index" aria-labelledby="index-title">
+      <div class="section-title"><h2 id="index-title">10 個問題，點一下找答案</h2><span>先答問題，再補重點</span></div>
+      <nav id="question-index" aria-label="十題問答索引"></nav>
+      <p id="source-note" class="source-note"></p>
+    </section>
+    <section id="answers" aria-label="中英問答"></section>
+    <section id="opening" class="speech" aria-labelledby="opening-title"><h2 id="opening-title">開場白 <span>Opening</span></h2><div id="opening-text"></div></section>
+    <section id="closing" class="speech" aria-labelledby="closing-title"><h2 id="closing-title">結尾總結 <span>Closing</span></h2><div id="closing-text"></div></section>
+    <section id="strategy" aria-labelledby="strategy-title"><h2 id="strategy-title">回答策略 <span>Keep it clear</span></h2><div id="strategy-text"></div></section>
+    <footer><p id="offline-status" role="status">首次載入後，會準備離線閱讀。</p><p>只作本人會議提示 · 按真實記憶及紀錄回答</p></footer>
+  </main>
+  <nav class="bottom-nav" aria-label="快速跳轉"><a href="#index">索引</a><a href="#opening">開場</a><a href="#closing">結尾</a><a href="#strategy">策略</a></nav>
+  <noscript>請開啟 JavaScript，以顯示會議內容。</noscript>
+</body>
+</html>
